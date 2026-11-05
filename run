@@ -1,0 +1,2 @@
+#!/data/data/com.termux/files/usr/bin/bash
+exec python3 /data/data/com.termux/files/home/clipd/clipd.py >> /data/data/com.termux/files/home/clipd/logs/clipd.log 2>&1
