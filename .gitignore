@@ -1,0 +1,16 @@
+# clipd runtime data
+clipd.db
+clipd.db-shm
+clipd.db-wal
+logs/
+*.log
+
+# python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# editors / os
+.DS_Store
+*.swp

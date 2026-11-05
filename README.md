@@ -1,6 +1,13 @@
 # clipd — Clipboard Intelligence Daemon
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![Platform: Termux](https://img.shields.io/badge/platform-Termux-black.svg)](https://termux.dev)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-3776ab.svg)](https://www.python.org)
+[![Android 10+](https://img.shields.io/badge/Android-10%2B-3ddc84.svg)](https://www.android.com)
+
 Анализатор буфера обмена для Termux. Распознаёт 20+ типов данных и выдаёт контекстные действия через уведомление.
+
+> Автор: **Xnode-sh** · RED └•TEAM•┐ lab™ · © 2026
 
 ## Возможности
 
@@ -27,9 +34,10 @@ pkg install python termux-api
 pip install pyjwt
 
 # Клонирование
-git clone <repo> ~/clipd
+git clone https://github.com/Xnode-sh/clipd.git ~/clipd
 cd ~/clipd
-chmod +x clipd.py clipd_tui.py
+mkdir -p logs
+chmod +x clipd.py clipd_tui.py run
 
 # Автозапуск (termux-services)
 ln -sf ~/clipd ~/.termux/boot/clipd
@@ -78,9 +86,9 @@ python3 ~/clipd/clipd_tui.py
 ~/clipd/
 ├── clipd.py          # Основной скрипт (on-demand)
 ├── clipd_tui.py      # TUI для истории
-├── clipd.db          # SQLite база
 ├── run               # Сервис для termux-services
-└── logs/             # Логи демона
+├── logs/             # Логи демона
+└── clipd.db          # SQLite база (создаётся автоматически, не в git)
 ```
 
 ## Как это работает
@@ -99,4 +107,10 @@ python3 ~/clipd/clipd_tui.py
 
 ## Лицензия
 
-MIT — делай что хочешь.
+MIT — свободное использование с сохранением копирайта.
+
+```
+Copyright (c) 2026 Xnode-sh — RED └•TEAM•┐ lab™
+```
+
+Полный текст — в файле [LICENSE](LICENSE).

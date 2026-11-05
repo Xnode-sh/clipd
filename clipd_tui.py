@@ -1,4 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/python3
+# clipd — Clipboard Intelligence Daemon (TUI)
+# Copyright (c) 2026 Xnode-sh — RED └•TEAM•┐ lab™
+# SPDX-License-Identifier: MIT
 import sqlite3
 import curses
 import json
