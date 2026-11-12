@@ -14,3 +14,8 @@ venv/
 # editors / os
 .DS_Store
 *.swp
+
+# Secrets
+.env
+.env.*
+!.env.example
